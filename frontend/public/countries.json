@@ -1,0 +1,127 @@
+[
+    {
+        "text": ".",
+        "id": "italy",
+        "name": "Italy",
+        "lat": 41.8719,
+        "lng": 12.5674,
+        "altitude": 0.1,
+        "color": "yellow",
+        "dishes": [
+            {
+                "id": "pizza-margherita",
+                "name": "Pizza Margherita",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1280px-Pizza-3007395.jpg",
+                "description": "Classic Neapolitan pizza with tomato, mozzarella and basil.",
+                "recipe": {
+                    "ingredients": [
+                        "Flour",
+                        "Yeast",
+                        "Tomato sauce",
+                        "Mozzarella cheese",
+                        "Fresh basil",
+                        "Olive oil"
+                    ],
+                    "steps": [
+                        "Prepare the dough and let it rise.",
+                        "Spread tomato sauce over the base.",
+                        "Add mozzarella and basil leaves.",
+                        "Bake in a hot oven until golden and crispy."
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "text": ".",
+        "id": "japan",
+        "name": "Japan",
+        "lat": 36.2048,
+        "lng": 138.2529,
+        "altitude": 0.1,
+        "color": "yellow",
+        "dishes": [
+            {
+                "id": "sushi",
+                "name": "Sushi",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Makizushi.jpg/1280px-Makizushi.jpg",
+                "description": "Traditional Japanese dish with vinegared rice and various fillings.",
+                "recipe": {
+                    "ingredients": [
+                        "Sushi rice",
+                        "Rice vinegar",
+                        "Nori (seaweed)",
+                        "Raw fish or vegetables",
+                        "Soy sauce",
+                        "Wasabi"
+                    ],
+                    "steps": [
+                        "Cook and season the sushi rice.",
+                        "Place rice on a nori sheet.",
+                        "Add fillings and roll.",
+                        "Slice and serve with soy sauce and wasabi."
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "text": ".",
+        "id": "mexico",
+        "name": "Mexico",
+        "lat": 23.6345,
+        "lng": -102.5528,
+        "altitude": 0.1,
+        "color": "red",
+        "dishes": [
+            {
+                "id": "tacos",
+                "name": "Tacos",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/01_Tacos_al_Pastor.jpg/1280px-01_Tacos_al_Pastor.jpg",
+                "description": "Soft or crispy tortillas filled with meat, beans, vegetables or cheese.",
+                "recipe": {
+                    "ingredients": [
+                        "Corn tortillas",
+                        "Beef or chicken",
+                        "Beans",
+                        "Lettuce",
+                        "Tomato",
+                        "Cheese",
+                        "Salsa"
+                    ],
+                    "steps": [
+                        "Cook meat with spices.",
+                        "Warm tortillas.",
+                        "Assemble tacos with desired toppings.",
+                        "Serve with salsa on the side."
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "text": ".",
+        "id": "yemen",
+        "name": "Yemen",
+        "lat": 15.369445,
+        "lng": 44.191006,
+        "altitude": 0.1,
+        "color": "yellow",
+        "dishes": [
+            {
+                "id": "jachnun",
+                "name": "Jachnun",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Jachnun.jpg/1024px-Jachnun.jpg",
+                "description": "",
+                "recipe": {
+                    "ingredients": [
+                        
+                    ],
+                    "steps": [
+                        
+                    ]
+                }
+            }
+        ]
+    }
+]

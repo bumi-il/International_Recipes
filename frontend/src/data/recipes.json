@@ -1,0 +1,265 @@
+[
+  {
+    "id": "pizza-margherita",
+    "name": "Pizza Margherita",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/1920px-Pizza_Margherita_stu_spivack.jpg",
+    "description": "Classic Italian pizza with tomato, mozzarella, and basil.",
+    "lat": 41.9,
+    "lng": 12.5,
+    "country": {
+      "id": "italy",
+      "name": "Italy"
+    },
+    "recipe": {
+      "ingredients": [
+        "Flour",
+        "Yeast",
+        "Tomato sauce",
+        "Mozzarella",
+        "Basil",
+        "Olive oil"
+      ],
+      "steps": [
+        "Prepare dough and let it rise.",
+        "Add tomato sauce and toppings.",
+        "Bake until golden."
+      ]
+    }
+  },
+  {
+    "id": "lasagna",
+    "name": "Lasagna",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Meaty_Lasagna_8of8_%288736299782%29.jpg",
+    "description": "Traditional Italian layered pasta dish.",
+    "lat": 42.1,
+    "lng": 12.6,
+    "country": {
+      "id": "italy",
+      "name": "Italy"
+    },
+    "recipe": {
+      "ingredients": [
+        "Lasagna noodles",
+        "Meat sauce",
+        "Béchamel sauce",
+        "Parmesan"
+      ],
+      "steps": [
+        "Layer noodles, sauce, and cheese.",
+        "Bake in oven.",
+        "Serve hot."
+      ]
+    }
+  },
+  {
+    "id": "sushi",
+    "name": "Sushi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Golden_Maki_Rainbow_Roll_sushi.jpg/1920px-Golden_Maki_Rainbow_Roll_sushi.jpg",
+    "description": "Traditional Japanese dish with vinegared rice and seafood.",
+    "lat": 35.7,
+    "lng": 139.7,
+    "country": {
+      "id": "japan",
+      "name": "Japan"
+    },
+    "recipe": {
+      "ingredients": [
+        "Sushi rice",
+        "Nori",
+        "Fish",
+        "Wasabi",
+        "Soy sauce"
+      ],
+      "steps": [
+        "Cook and season the rice.",
+        "Prepare fillings.",
+        "Roll and slice."
+      ]
+    }
+  },
+  {
+    "id": "ramen",
+    "name": "Ramen",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Dosanko_Akaneri.jpg/1920px-Dosanko_Akaneri.jpg",
+    "description": "Japanese noodle soup with broth and toppings.",
+    "lat": 35.6,
+    "lng": 140.0,
+    "country": {
+      "id": "japan",
+      "name": "Japan"
+    },
+    "recipe": {
+      "ingredients": [
+        "Noodles",
+        "Broth",
+        "Pork",
+        "Egg",
+        "Scallions"
+      ],
+      "steps": [
+        "Cook broth.",
+        "Boil noodles.",
+        "Assemble bowl and serve."
+      ]
+    }
+  },
+  {
+    "id": "tacos",
+    "name": "Tacos",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/01_Tacos_al_Pastor.jpg/1920px-01_Tacos_al_Pastor.jpg",
+    "description": "Mexican dish of folded tortilla filled with various ingredients.",
+    "lat": 19.4,
+    "lng": -99.1,
+    "country": {
+      "id": "mexico",
+      "name": "Mexico"
+    },
+    "recipe": {
+      "ingredients": [
+        "Tortilla",
+        "Beef or chicken",
+        "Lettuce",
+        "Tomato",
+        "Cheese",
+        "Salsa"
+      ],
+      "steps": [
+        "Cook meat.",
+        "Prepare toppings.",
+        "Assemble tacos and serve."
+      ]
+    }
+  },
+  {
+    "id": "guacamole",
+    "name": "Guacamole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Guacamole_IMGP1271.jpg/1920px-Guacamole_IMGP1271.jpg",
+    "description": "Avocado-based dip from Mexico.",
+    "lat": 19.3,
+    "lng": -99.2,
+    "country": {
+      "id": "mexico",
+      "name": "Mexico"
+    },
+    "recipe": {
+      "ingredients": [
+        "Avocado",
+        "Onion",
+        "Tomato",
+        "Lime",
+        "Salt",
+        "Cilantro"
+      ],
+      "steps": [
+        "Mash avocado.",
+        "Mix in ingredients.",
+        "Serve fresh."
+      ]
+    }
+  },
+  {
+    "id": "paella",
+    "name": "Paella",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/01_Paella_Valenciana_original.jpg",
+    "description": "Spanish rice dish with seafood or meat.",
+    "lat": 39.5,
+    "lng": -0.4,
+    "country": {
+      "id": "spain",
+      "name": "Spain"
+    },
+    "recipe": {
+      "ingredients": [
+        "Rice",
+        "Saffron",
+        "Seafood",
+        "Peppers",
+        "Peas",
+        "Olive oil"
+      ],
+      "steps": [
+        "Cook rice with broth and saffron.",
+        "Add ingredients.",
+        "Simmer until ready."
+      ]
+    }
+  },
+  {
+    "id": "tortilla-espanola",
+    "name": "Tortilla Española",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg/1920px-Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg",
+    "description": "Spanish omelette with potatoes and onions.",
+    "lat": 40.4,
+    "lng": -3.7,
+    "country": {
+      "id": "spain",
+      "name": "Spain"
+    },
+    "recipe": {
+      "ingredients": [
+        "Eggs",
+        "Potatoes",
+        "Onions",
+        "Olive oil",
+        "Salt"
+      ],
+      "steps": [
+        "Cook potatoes and onions.",
+        "Mix with eggs.",
+        "Cook in pan until firm."
+      ]
+    }
+  },
+  {
+    "id": "falafel",
+    "name": "Falafel",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Falafel_balls.jpg",
+    "description": "Deep-fried chickpea balls, popular in the Middle East.",
+    "lat": 31.8,
+    "lng": 35.2,
+    "country": {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    "recipe": {
+      "ingredients": [
+        "Chickpeas",
+        "Parsley",
+        "Onion",
+        "Garlic",
+        "Spices",
+        "Flour"
+      ],
+      "steps": [
+        "Blend ingredients.",
+        "Form balls.",
+        "Fry until crispy."
+      ]
+    }
+  },
+  {
+    "id": "hummus",
+    "name": "Hummus",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Houmous.jpg/1920px-Houmous.jpg",
+    "description": "Middle Eastern spread made from chickpeas and tahini.",
+    "lat": 31.7,
+    "lng": 35.3,
+    "country": {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    "recipe": {
+      "ingredients": [
+        "Chickpeas",
+        "Tahini",
+        "Lemon juice",
+        "Garlic",
+        "Olive oil"
+      ],
+      "steps": [
+        "Blend all ingredients until smooth.",
+        "Serve with pita."
+      ]
+    }
+  }
+]
