@@ -6,44 +6,20 @@ import recipes from '../data/recipes.json';
 import { useGlobeContext } from '../context/Context';
 
 const MyGlobe = () => {
-    const { globeRef, recipe, setRecipe } = useGlobeContext();
+    const { globeRef, setRecipe } = useGlobeContext();
 
     const [rotate, setRotate] = useState(false);
 
     useEffect(() => {
         if (globeRef.current) {
+            console.log(globeRef.current.pointOfView());
+
             globeRef.current.controls().autoRotate = rotate;
         }
     }, [rotate]);
 
-    const globeReady = () => {
-        if (globeRef.current) {
-            globeRef.current.pointOfView(
-                {
-                    lat: 0,
-                    lng: 0,
-                    altitude: 1.8,
-                },
-                1000
-            );
-        }
-    };
-
-    const handleRecipeClick = (selectedRecipe) => {
-        setRotate(false);
-        setRecipe(selectedRecipe);
-        globeRef.current.pointOfView(
-            {
-                lat: selectedRecipe.lat,
-                lng: selectedRecipe.lng - 10,
-                altitude: 0.5,
-            },
-            1000
-        );
-    };
-
     return (
-        <div>
+        <div className='globe'>
             <div
                 className='globe-rotate'
                 onClick={() => {
@@ -69,15 +45,27 @@ const MyGlobe = () => {
             </div>
             <Globe
                 ref={globeRef}
-                onGlobeReady={globeReady}
-                globeImageUrl={globeImage || '//unpkg.com/three-globe/example/img/earth-day.jpg'}
+                onGlobeReady={() => {
+                    if (globeRef.current) {
+                        globeRef.current.pointOfView(
+                            {
+                                lat: 0,
+                                lng: 0,
+                                altitude: 1.8,
+                            },
+                            1000
+                        );
+                    }
+                }}
+                globeImageUrl={
+                    globeImage ||
+                    '//unpkg.com/three-globe/example/img/earth-day.jpg'
+                }
                 htmlElementsData={recipes}
                 htmlElement={(data) => {
                     const cont = document.createElement('div');
                     cont.classList.add('cont');
-                    cont.addEventListener('click', () => {
-                        handleRecipeClick(data);
-                    });
+                    cont.addEventListener('click', () => setRecipe(data));
                     cont.innerHTML = `
                         <img src=${data.image} class="image" />
                         <div style="font-size: 12px; color: white; margin-top: 4px;">

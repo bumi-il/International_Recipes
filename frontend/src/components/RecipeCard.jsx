@@ -3,33 +3,24 @@ import { useGlobeContext } from '../context/Context';
 import { NavLink } from 'react-router-dom';
 
 const RecipeCard = () => {
-    const { globeRef, recipe, setRecipe } = useGlobeContext();
+    const { recipe, setRecipe } = useGlobeContext();
 
-    const { lng, name, description, image, id } = recipe;
+    const { name, image, id } = recipe;
 
     return (
-        <div className='info'>
+        <div className='card-page'>
             <div
-                onClick={() => {
-                    globeRef.current.pointOfView(
-                        {
-                            lng: lng,
-                        },
-                        1000
-                    );
-                    setRecipe(null);
-                }}
+                onClick={() => setRecipe(null)}
                 className='close'
             >
                 x
             </div>
             <h1>{name}</h1>
-            <p>{description}</p>
             <img
                 src={image}
-                width={200}
+                className='card-image'
             />
-            <NavLink to={'/' + id}>Prepare</NavLink>
+            <NavLink to={'/' + id} className={'btn'}>Prepare</NavLink>
         </div>
     );
 };

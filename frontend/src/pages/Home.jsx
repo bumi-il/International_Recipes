@@ -6,12 +6,7 @@ import RecipeCard from '../components/RecipeCard';
 const Home = () => {
     const { recipe } = useGlobeContext();
 
-    return (
-        <>
-            <div>{recipe && <RecipeCard />}</div>
-            <MyGlobe />
-        </>
-    );
+    return recipe ? <RecipeCard /> : <MyGlobe />;
 };
 
 export default Home;
