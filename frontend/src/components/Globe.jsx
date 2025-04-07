@@ -2,17 +2,16 @@ import { useEffect, useRef, useState } from 'react';
 import Globe from 'react-globe.gl';
 import * as THREE from 'three';
 import globeImage from '../assets/earth-day.jpg';
-import recipes from '../data/recipes.json';
 import { useGlobeContext } from '../context/Context';
 
 const MyGlobe = () => {
-    const { globeRef, setRecipe } = useGlobeContext();
+    const { globeRef, setRecipe, recipes } = useGlobeContext();
 
     const [rotate, setRotate] = useState(false);
 
     useEffect(() => {
         if (globeRef.current) {
-            console.log(globeRef.current.pointOfView());
+            // console.log(globeRef.current.pointOfView());
 
             globeRef.current.controls().autoRotate = rotate;
         }
@@ -62,12 +61,14 @@ const MyGlobe = () => {
                     '//unpkg.com/three-globe/example/img/earth-day.jpg'
                 }
                 htmlElementsData={recipes}
+                htmlLat={(data) => data.country.lat}
+                htmlLng={(data) => data.country.lng}
                 htmlElement={(data) => {
                     const cont = document.createElement('div');
                     cont.classList.add('cont');
                     cont.addEventListener('click', () => setRecipe(data));
                     cont.innerHTML = `
-                        <img src=${data.image} class="image" />
+                        <img src=${data.mainImage} class="image" />
                         <div style="font-size: 12px; color: white; margin-top: 4px;">
                             ${data.name}
                         </div>
