@@ -14,10 +14,7 @@ const ContextProvider = ({ children }) => {
 
     useEffect(() => {
         getAllRecipes().then((recipes) => recipes.success && setRecipes(recipes.message));
-    }, []);
-
-    console.log(recipes);
-    
+    }, []);    
 
     const value = {
         globeRef,

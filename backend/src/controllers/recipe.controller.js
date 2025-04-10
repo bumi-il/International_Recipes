@@ -13,9 +13,7 @@ export const getAllRecipes = async (req, res, next) => {
 
 export const getRecipeById = async (req, res, next) => {
     try {
-        const id = req.params.recipeId;
-
-        const recipe = await Recipe.findOne({ id: id });
+        const recipe = await Recipe.findOne({ id: req.params.recipeId });
         if (!recipe) {
             return res
                 .status(404)
@@ -34,6 +32,41 @@ export const newRecipe = async (req, res, next) => {
         const recipe = new Recipe(req.body);
         await recipe.save();
         return res.status(201).json({ success: true, message: recipe });
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({ success: false, message: error });
+    }
+};
+
+export const deleteRecipe = async (req, res, next) => {
+    try {
+        const recipe = await Recipe.findOneAndDelete({
+            id: req.params.recipeId,
+        });
+        if (!recipe) {
+            return res
+                .status(404)
+                .json({ success: false, message: 'Recipe not found' });
+        }
+        return res.status(200).json({ success: true, message: recipe });
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({ success: false, message: error });
+    }
+};
+
+export const updateRecipe = async (req, res, next) => {
+    try {
+        const recipe = await Recipe.findOneAndUpdate(
+            { id: req.params.recipeId },
+            req.body
+        );
+        if (!recipe) {
+            return res
+                .status(404)
+                .json({ success: false, message: 'Recipe not found' });
+        }
+        return res.status(200).json({ success: true, message: recipe });
     } catch (error) {
         console.log(error);
         return res.status(500).json({ success: false, message: error });

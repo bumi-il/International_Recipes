@@ -3,6 +3,7 @@ import Globe from 'react-globe.gl';
 import * as THREE from 'three';
 import globeImage from '../assets/earth-day.jpg';
 import { useGlobeContext } from '../context/Context';
+import { NavLink } from 'react-router-dom';
 
 const MyGlobe = () => {
     const { globeRef, setRecipe, recipes } = useGlobeContext();
@@ -19,6 +20,14 @@ const MyGlobe = () => {
 
     return (
         <div className='globe'>
+            <div className='addRecipeCont'>
+                <NavLink
+                    to='/new'
+                    className='addRecipeBtn'
+                >
+                    Add Your Recipe
+                </NavLink>
+            </div>
             <div
                 className='globe-rotate'
                 onClick={() => {
