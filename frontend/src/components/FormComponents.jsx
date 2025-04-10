@@ -70,3 +70,63 @@ export const SubmitButton = ({ isSubmitting }) => {
         <button type='submit'>{isSubmitting ? 'Loading...' : 'Submit'}</button>
     );
 };
+
+export const CustomArrayTextInput = ({
+    size,
+    setSize,
+    name,
+    placeholder,
+    register,
+    errors,
+}) => {
+    return (
+        <>
+            {[...Array(size)].map((_, index) => (
+                <div key={index}>
+                    <CustomTextInput
+                        name={`${name}[${index}]`}
+                        placeholder={placeholder + ' ' + (index + 1)}
+                        register={register}
+                    />
+                </div>
+            ))}
+            {errors && <p className='error'>{errors.message}</p>}
+            <button
+                type='button'
+                onClick={() => setSize(size + 1)}
+            >
+                Add
+            </button>
+        </>
+    );
+};
+
+export const CustomArrayTextArea = ({
+    size,
+    setSize,
+    name,
+    placeholder,
+    register,
+    errors,
+}) => {
+    return (
+        <>
+            {[...Array(size)].map((_, index) => (
+                <div key={index}>
+                    <CustomTextArea
+                        name={`${name}[${index}]`}
+                        placeholder={placeholder + ' ' + (index + 1)}
+                        register={register}
+                    />
+                </div>
+            ))}
+            {errors && <p className='error'>{errors.message}</p>}
+            <button
+                type='button'
+                onClick={() => setSize(size + 1)}
+            >
+                Add
+            </button>
+        </>
+    );
+};
